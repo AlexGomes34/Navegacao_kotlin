@@ -43,7 +43,7 @@ fun MenuScreen(navController: NavController) {
         ) {
             Button(
                 onClick = {
-                    navController.navigate("perfil/jotarokujo")
+                    navController.navigate("perfil/jotarokujo/17")
                 },
                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                 modifier = Modifier.fillMaxWidth()
@@ -71,7 +71,7 @@ fun MenuScreen(navController: NavController) {
             }
             Button(
                 onClick = {
-                    navController.navigate("login")
+                    navController.popBackStack()
                 },
                 colors = ButtonDefaults.buttonColors(containerColor = Color.White),
                 modifier = Modifier.fillMaxWidth()
